@@ -92,7 +92,7 @@ hi link javascriptNull          Constant
 
 call s:hifg("Normal","#EEEEEE","White",87)
 if has("gui_running")
-    hi Normal guibg=#252525
+    hi Normal guibg=#1D1D1D
 endif
 highlight StatusLine    guifg=Black   guibg=#aabbee gui=bold ctermfg=Black ctermbg=White  cterm=bold
 highlight StatusLineNC  guifg=#444444 guibg=#aaaaaa gui=none ctermfg=Black ctermbg=Grey   cterm=none
