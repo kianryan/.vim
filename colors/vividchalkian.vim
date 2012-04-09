@@ -92,7 +92,7 @@ hi link javascriptNull          Constant
 
 call s:hifg("Normal","#EEEEEE","White",87)
 if has("gui_running")
-    hi Normal guibg=#121212
+    hi Normal guibg=#252525
 endif
 highlight StatusLine    guifg=Black   guibg=#aabbee gui=bold ctermfg=Black ctermbg=White  cterm=bold
 highlight StatusLineNC  guifg=#444444 guibg=#aaaaaa gui=none ctermfg=Black ctermbg=Grey   cterm=none
@@ -109,7 +109,7 @@ highlight Search        guifg=NONE ctermfg=NONE gui=none cterm=none
 call s:hibg("Search"    ,"#555555","Black",81)
 highlight IncSearch     guifg=White guibg=Black ctermfg=White ctermbg=Black
 highlight MoreMsg       guifg=#00AA00 ctermfg=Green
-highlight LineNr        guifg=#3333ee guibg=#161616 ctermfg=DarkBlue
+highlight LineNr        guifg=#444444 guibg=#202020 ctermfg=DarkGrey
 highlight Question      none
 high link Question      MoreMsg
 highlight Title         guifg=Magenta ctermfg=Magenta
