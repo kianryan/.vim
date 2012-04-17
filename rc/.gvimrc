@@ -1,4 +1,4 @@
-set guifont=Deja\ Vu\ Sans\ Mono\ 9
+set guifont=Monaco\ 9
 set sw=4 sts=4 et
 set go-=T
 set ruler

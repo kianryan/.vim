@@ -94,8 +94,8 @@ call s:hifg("Normal","#EEEEEE","White",87)
 if has("gui_running")
     hi Normal guibg=#1D1D1D
 endif
-highlight StatusLine    guifg=Black   guibg=#aabbee gui=bold ctermfg=Black ctermbg=White  cterm=bold
-highlight StatusLineNC  guifg=#444444 guibg=#aaaaaa gui=none ctermfg=Black ctermbg=Grey   cterm=none
+highlight StatusLine    guifg=#eeeeee guibg=#424242 gui=underline ctermfg=LightGrey ctermbg=DarkGrey  cterm=underline
+highlight StatusLineNC  guifg=#eeeeee guibg=#424242 gui=none ctermfg=LightGrey ctermbg=DarkGrey   cterm=none
 highlight WildMenu      guifg=Black   guibg=#ffff00 gui=bold ctermfg=Black ctermbg=Yellow cterm=bold
 highlight Cursor        guifg=Black guibg=White ctermfg=Black ctermbg=White
 highlight CursorLine    guibg=#333333 guifg=NONE
@@ -133,8 +133,8 @@ call s:hifg("TabLine"   ,"#bbbbbb","LightGrey",85)
 call s:hibg("TabLine"   ,"#333333","DarkGrey",80)
 highlight TabLineSel    guifg=White guibg=Black ctermfg=White ctermbg=Black
 highlight TabLineFill   gui=underline cterm=underline
-call s:hifg("TabLineFill","#bbbbbb","LightGrey",85)
-call s:hibg("TabLineFill","#808080","Grey",83)
+call s:hifg("TabLineFill","#bbbbbb","Grey",80)
+call s:hibg("TabLineFill","#444444","Grey",80)
 
 hi Type gui=none
 hi Statement gui=none
@@ -162,3 +162,10 @@ call s:hifg("Special"        ,"#33AA00","DarkGreen",24) " 7
 call s:hifg("Regexp"         ,"#44B4CC","DarkCyan",21) " 74
 call s:hifg("rubyMethod"     ,"#DDE93D","Yellow",77) " 191
 "highlight railsMethod   guifg=#EE1122 ctermfg=1
+
+let s:line = "#2A2A2A"
+let s:selection = "#424242"
+let s:foreground = "#333333"
+
+  call s:hifg("VertSplit"  ,s:selection,"DarkGrey",80)
+  call s:hibg("VertSplit"  ,s:selection,"DarkGrey",80)
