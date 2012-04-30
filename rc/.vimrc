@@ -6,6 +6,7 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 set hidden
 set number
+set t_Co=256
 colorscheme vividchalkian
 
 set ignorecase 
