@@ -9,6 +9,7 @@ endif
 if has("gui_win32")
     set guifont=Consolas\ 10
     set bs=2
+    map <leader>ff :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<cr>
 endif
 
 set sw=4 sts=4 et
