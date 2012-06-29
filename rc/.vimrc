@@ -7,7 +7,8 @@ filetype plugin on    " Enable filetype-specific plugins
 set hidden
 set number
 set t_Co=256
-colorscheme vividchalkian
+let NERDTreeDirArrows=0
+colorscheme vividchalk-256
 
 set ignorecase 
 set smartcase " Lower case searches ignore case, single uppercase searches case.
