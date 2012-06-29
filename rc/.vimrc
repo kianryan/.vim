@@ -15,5 +15,6 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
+map <leader>nt :NERDTreeToggle<cr>
 
 autocmd FileType ruby,eruby,yaml set sw=2 sts=2 et

@@ -131,7 +131,7 @@ highlight PmenuThumb    guibg=White ctermbg=White
 highlight TabLine       gui=underline cterm=underline
 call s:hifg("TabLine"   ,"#bbbbbb","LightGrey",85)
 call s:hibg("TabLine"   ,"#333333","DarkGrey",80)
-highlight TabLineSel    guifg=White guibg=Black ctermfg=White ctermbg=Black
+highlight TabLineSel    guifg=White guibg=#1D1D1D ctermfg=White ctermbg=Black
 highlight TabLineFill   gui=underline cterm=underline
 call s:hifg("TabLineFill","#bbbbbb","Grey",80)
 call s:hibg("TabLineFill","#444444","Grey",80)

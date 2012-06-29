@@ -7,7 +7,7 @@ if has("gui_macvim")
 endif
 
 if has("gui_win32")
-    set guifont=Consolas\ 10
+    set guifont=Consolas:h10
     set bs=2
     map <leader>ff :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<cr>
 endif
