@@ -96,6 +96,7 @@ if has("gui_running")
 endif
 highlight StatusLine    guifg=#eeeeee guibg=#424242 gui=underline ctermfg=LightGrey ctermbg=DarkGrey  cterm=underline
 highlight StatusLineNC  guifg=#eeeeee guibg=#424242 gui=none ctermfg=LightGrey ctermbg=DarkGrey   cterm=none
+highlight ColorColumn   guibg=#202020 ctermbg=DarkGrey
 highlight WildMenu      guifg=Black   guibg=#ffff00 gui=bold ctermfg=Black ctermbg=Yellow cterm=bold
 highlight Cursor        guifg=Black guibg=White ctermfg=Black ctermbg=White
 highlight CursorLine    guibg=#333333 guifg=NONE
@@ -169,3 +170,7 @@ let s:foreground = "#333333"
 
   call s:hifg("VertSplit"  ,s:selection,"DarkGrey",80)
   call s:hibg("VertSplit"  ,s:selection,"DarkGrey",80)
+
+call s:hifg("csIface","#AACCFF","LightCyan",27)
+call s:hifg("csClass","#DDE93D","Yellow",27)
+call s:hifg("csGeneric","#FFFFFF","White",27)
