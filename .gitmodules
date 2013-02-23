@@ -47,7 +47,7 @@
 	path = bundle/tlib
 	url = git://github.com/tomtom/tlib_vim.git
 [submodule "bundle/snipmate-snippets"]
-	path = bundle/snipmate
+	path = bundle/snipmate-snippets
         url = git://git@github.com:kianryan/snipmate-snippets.git
 [submodule "bundle/sqlcomplete"]
 	path = bundle/sqlcomplete
