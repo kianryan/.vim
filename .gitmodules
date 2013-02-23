@@ -36,7 +36,7 @@
 	url = git://github.com/tpope/vim-markdown.git
 [submodule "bundle/csharp"]
         path = bundle/csharp
-        url = git://git@github.com/OrangeT/vim-csharp.git
+        url = git://github.com/OrangeT/vim-csharp.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
         url = git://github.com/garbas/vim-snipmate.git
@@ -48,7 +48,7 @@
 	url = git://github.com/tomtom/tlib_vim.git
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
-        url = git://git@github.com:kianryan/snipmate-snippets.git
+        url = git://github.com:kianryan/snipmate-snippets.git
 [submodule "bundle/sqlcomplete"]
 	path = bundle/sqlcomplete
 	url = git://github.com/vim-scripts/SQLComplete.vim.git
