@@ -1,6 +1,5 @@
 
-"If Linux, 9pt Monaco
-set guifont=Monaco\ 9
+set guifont=Source\ Code\ Pro\ 9
 
 if has("gui_macvim")
     set guifont=Source\ Code\ Pro:h11
