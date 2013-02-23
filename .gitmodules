@@ -36,7 +36,7 @@
 	url = git://github.com/tpope/vim-markdown.git
 [submodule "bundle/csharp"]
         path = bundle/csharp
-        url = git://git@github.com:OrangeT/vim-csharp.git
+        url = git://git@github.com/OrangeT/vim-csharp.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
         url = git://github.com/garbas/vim-snipmate.git
