@@ -39,3 +39,8 @@ let g:syntastic_auto_loc_list=1
 " (but not if it's already open). However, as part of the autocmd, this doesn't
 " seem to happen.
 autocmd QuickFixCmdPost [^l]* nested cwindow
+
+nmap <C-B> :make <CR>
+
+set encoding=utf-8
+set laststatus=2
