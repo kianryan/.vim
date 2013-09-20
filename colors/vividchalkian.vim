@@ -97,6 +97,7 @@ endif
 highlight StatusLine    guifg=#eeeeee guibg=#424242 gui=underline ctermfg=LightGrey ctermbg=DarkGrey  cterm=underline
 highlight StatusLineNC  guifg=#eeeeee guibg=#424242 gui=none ctermfg=LightGrey ctermbg=DarkGrey   cterm=none
 highlight ColorColumn   guibg=#202020 ctermbg=DarkGrey
+highlight SignColumn   guibg=#202020 ctermbg=DarkGrey
 highlight WildMenu      guifg=Black   guibg=#ffff00 gui=bold ctermfg=Black ctermbg=Yellow cterm=bold
 highlight Cursor        guifg=Black guibg=White ctermfg=Black ctermbg=White
 highlight CursorLine    guibg=#333333 guifg=NONE
@@ -174,3 +175,20 @@ let s:foreground = "#333333"
 call s:hifg("csIface","#AACCFF","LightCyan",27)
 call s:hifg("csClass","#DDE93D","Yellow",27)
 call s:hifg("csGeneric","#FFFFFF","White",27)
+
+" Syntastic color coding
+call s:hibg("SyntasticErrorSign", "#202020", "DarkGrey", 80)
+call s:hifg("SyntasticErrorSign", "#FF0000", "Red", 21)
+call s:hibg("SyntasticWarnSign", "#202020", "DarkGrey", 80)
+call s:hifg("SyntasticWarnSign", "#FF0000", "Yellow", 60)
+
+"GitGutter
+call s:hibg("GitGutterAdd", "#202020", "DarkGrey", 80)
+call s:hifg("GitGutterAdd", "#00ff00", "Green", 44,82)
+call s:hibg("GitGutterChange", "#202020", "DarkGrey", 80)
+call s:hifg("GitGutterChange", "#DDE93D", "Yellow", 60)
+call s:hibg("GitGutterDelete", "#202020", "DarkGrey", 80)
+call s:hifg("GitGutterDelete", "#FF0000", "Red", 21)
+call s:hibg("GitGutterChangeDelete", "#202020", "DarkGrey", 80)
+call s:hifg("GitGutterChangeDelete", "#0000FF", "Blue", 18)
+
