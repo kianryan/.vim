@@ -55,14 +55,14 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
-[submodule "bundle\\omnisharp"]
-	path = bundle\\omnisharp
+[submodule "bundle/omnisharp"]
+	path = bundle/omnisharp
 	url = https://github.com/nosami/Omnisharp
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
-[submodule "bundle\\solarized"]
-	path = bundle\\solarized
+[submodule "bundle/solarized"]
+	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
