@@ -7,16 +7,21 @@ filetype plugin on    " Enable filetype-specific plugins
 set hidden
 set number
 set t_Co=256
+set history=1000
 let NERDTreeDirArrows=0
 colorscheme vividchalk-256
 
-set ignorecase 
+set ignorecase
 set smartcase " Lower case searches ignore case, single uppercase searches case.
 set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
 map <leader>nt :NERDTreeToggle<cr>
+
+" Toggle folding
+noremap <leader>mo :set foldmethod=indent<cr>
+noremap <leader>ml :set nofoldenable<cr>
 
 autocmd FileType ruby,eruby,yaml set sw=2 sts=2 et
 "
@@ -26,7 +31,7 @@ autocmd FileType ruby,eruby,yaml set sw=2 sts=2 et
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-let g:syntastic_enable_signs=0
+let g:syntastic_enable_signs=1
 let g:syntastic_enable_highlight=1
 let g:syntastic_auto_loc_list=1
 
@@ -44,3 +49,25 @@ nmap <C-B> :make <CR>
 
 set encoding=utf-8
 set laststatus=2
+
+" Disable Buf Check in Omni - let syntastic do it's job.
+let g:Omnisharp_start_server = 0
+let g:OmniSharp_BufWritePreSyntaxCheck = 0
+
+" Real time diff checking broken on Win
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+
+" Airline
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#tagbar#enabled = 0
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+
+"File Tidy
+command! Hedge % s /\(^\s*\n$\)\+//g | % s /\s*$//g | noh
+map <leader>h :Hedge
+
+function! SyntaxItem()
+  return synIDattr(synID(line("."),col("."),1),"name")
+endfunction
