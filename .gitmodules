@@ -79,3 +79,19 @@
 [submodule "bundle/html5"]
 	path = bundle/html5
 	url = https://github.com/othree/html5.vim.git
+[submodule "bundle/mustache.vim"]
+	path = bundle/mustache.vim
+	url = https://github.com/juvenn/mustache.vim.git
+	branch = master
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+	branch = master
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+	branch = master
+[submodule "bundle/VimRepress"]
+	path = bundle/VimRepress
+	url = git@github.com:kianryan/VimRepress.git
+	branch = master
