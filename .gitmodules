@@ -122,3 +122,9 @@
 	path = bundle/VimRepress
 	url = git@github.com:kianryan/VimRepress.git
 	branch = master
+[submodule "bundle/webapi-vim"]
+	path = bundle/webapi-vim
+	url = https://github.com/mattn/webapi-vim.git
+[submodule "bundle/gist-vim"]
+	path = bundle/gist-vim
+	url = https://github.com/mattn/gist-vim.git
