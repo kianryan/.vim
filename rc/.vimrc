@@ -71,3 +71,7 @@ map <leader>h :Hedge
 function! SyntaxItem()
   return synIDattr(synID(line("."),col("."),1),"name")
 endfunction
+
+"Arduino
+au BufRead,BufNewFile *.pde set filetype=arduino | set syntax=cpp
+au BufRead,BufNewFile *.ino set filetype=arduino | set syntax=cpp

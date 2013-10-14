@@ -122,3 +122,7 @@
 	path = bundle/VimRepress
 	url = git@github.com:kianryan/VimRepress.git
 	branch = master
+[submodule "bundle/vim-arduino"]
+	path = bundle/vim-arduino
+	url = https://github.com/tclem/vim-arduino.git
+	branch = master
