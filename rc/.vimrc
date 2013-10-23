@@ -71,3 +71,11 @@ map <leader>h :Hedge
 function! SyntaxItem()
   return synIDattr(synID(line("."),col("."),1),"name")
 endfunction
+
+" Mappings for Fugitive
+map <leader>gs :Gstatus<cr>
+map <leader>gc :Gcommit<cr>
+map <leader>gd :Gdiff<cr>
+map <leader>gb :Gblame<cr>
+map <leader>gl :Glog<cr>
+map <leader>gp :Git pull<cr>
