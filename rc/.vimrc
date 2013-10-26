@@ -8,6 +8,7 @@ set hidden
 set number
 set t_Co=256
 set history=1000
+set backspace=2
 let NERDTreeDirArrows=0
 colorscheme vividchalk-256
 
@@ -75,3 +76,13 @@ endfunction
 "Arduino
 au BufRead,BufNewFile *.pde set filetype=arduino | set syntax=cpp
 au BufRead,BufNewFile *.ino set filetype=arduino | set syntax=cpp
+
+"Ruby/Rails
+augroup ruby,eruby
+  set omnifunc=rubycomplete#Complete
+  let g:rubycomplete_buffer_loading = 1
+  let g:rubycomplete_rails = 1
+  let g:rubycomplete_classes_in_global = 1
+  let g:rubycomplete_include_object = 1
+  let g:rubycomplete_include_objectspace = 1
+augroup END
