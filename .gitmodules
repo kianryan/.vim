@@ -128,3 +128,13 @@
 [submodule "bundle/gist-vim"]
 	path = bundle/gist-vim
 	url = https://github.com/mattn/gist-vim.git
+[submodule "bundle/vim-arduino"]
+	path = bundle/vim-arduino
+	url = https://github.com/tclem/vim-arduino.git
+	branch = master
+[submodule "bundle/vim-endwise"]
+	path = bundle/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
+[submodule "bundle/vim-cucumber"]
+	path = bundle/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber.git

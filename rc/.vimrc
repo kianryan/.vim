@@ -8,6 +8,7 @@ set hidden
 set number
 set t_Co=256
 set history=1000
+set backspace=2
 let NERDTreeDirArrows=0
 colorscheme vividchalk-256
 
@@ -61,8 +62,8 @@ let g:gitgutter_eager = 0
 " Airline
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline#extensions#tagbar#enabled = 0
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '◀'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 
 "File Tidy
 command! Hedge % s /\(^\s*\n$\)\+//g | % s /\s*$//g | noh
@@ -79,3 +80,17 @@ map <leader>gd :Gdiff<cr>
 map <leader>gb :Gblame<cr>
 map <leader>gl :Glog<cr>
 map <leader>gp :Git pull<cr>
+
+"Arduino
+au BufRead,BufNewFile *.pde set filetype=arduino | set syntax=cpp
+au BufRead,BufNewFile *.ino set filetype=arduino | set syntax=cpp
+
+"Ruby/Rails
+augroup ruby,eruby
+  set omnifunc=rubycomplete#Complete
+  let g:rubycomplete_buffer_loading = 1
+  let g:rubycomplete_rails = 1
+  let g:rubycomplete_classes_in_global = 1
+  let g:rubycomplete_include_object = 1
+  let g:rubycomplete_include_objectspace = 1
+augroup END

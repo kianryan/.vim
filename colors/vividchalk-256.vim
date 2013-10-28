@@ -171,4 +171,15 @@ let s:foreground = "#333333"
   call s:hifg("VertSplit"  ,s:selection,"238",80)
   call s:hibg("VertSplit"  ,s:selection,"238",80)
 
+highlight SignColumn ctermbg=None
 highlight VertSplit ctermfg=238 ctermbg=238
+
+" Syntastic color coding
+highlight SyntasticErrorSign ctermfg=21 ctermbg=None
+highlight SyntasticWarnSign ctermfg=21 ctermbg=None
+
+"GitGutter
+highlight GitGutterAdd ctermfg=82
+highlight GitGutterChange ctermfg=220
+highlight GitGutterDelete ctermfg=9
+highlight GitGutterChangeDelete ctermfg=44
