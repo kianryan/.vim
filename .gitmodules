@@ -26,10 +26,6 @@
 	path = bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
 	branch = master
-[submodule "bundle/csapprox"]
-	path = bundle/csapprox
-	url = git://github.com/godlygeek/csapprox.git
-	branch = master
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
@@ -89,10 +85,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-	branch = master
-[submodule "bundle/vim-css-color"]
-	path = bundle/vim-css-color
-	url = https://github.com/skammer/vim-css-color
 	branch = master
 [submodule "bundle/vim-css3-syntax"]
 	path = bundle/vim-css3-syntax
