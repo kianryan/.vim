@@ -134,3 +134,7 @@
 	path = bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
 	branch = master
+[submodule "bundle/neocomplcache.vim"]
+	path = bundle/neocomplcache.vim
+	url = https://github.com/Shougo/neocomplcache.vim.git
+	branch = master
