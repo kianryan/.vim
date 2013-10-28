@@ -117,9 +117,11 @@
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
+	branch = master
 [submodule "bundle/gist-vim"]
 	path = bundle/gist-vim
 	url = https://github.com/mattn/gist-vim.git
+	branch = master
 [submodule "bundle/vim-arduino"]
 	path = bundle/vim-arduino
 	url = https://github.com/tclem/vim-arduino.git
@@ -127,6 +129,8 @@
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
+	branch = master
 [submodule "bundle/vim-cucumber"]
 	path = bundle/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
+	branch = master
