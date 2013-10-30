@@ -10,6 +10,7 @@ if has("gui_win32")
     set guifont=Source\ Code\ Pro:h9
     set bs=2
     map <leader>ff :call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<cr>
+    set wildignore+=*\\Deployment\\*,*\\js.min\\*
 endif
 
 if has("gui_unix")
