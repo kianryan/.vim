@@ -192,4 +192,4 @@ call s:hifg("GitGutterDelete", "#FF0000", "Red", 21)
 call s:hibg("GitGutterChangeDelete", "#202020", "DarkGrey", 80)
 call s:hifg("GitGutterChangeDelete", "#0000FF", "Blue", 18)
 
-highlight SpellBad     guifg=none guibg=none ctermfg=Red ctermbg=none cterm=underline
+highlight SpellBad     guifg=NONE guibg=NONE ctermfg=Red ctermbg=none cterm=underline
