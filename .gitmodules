@@ -138,3 +138,7 @@
 	path = bundle/neocomplcache.vim
 	url = https://github.com/Shougo/neocomplcache.vim.git
 	branch = master
+[submodule "bundle/vimproc.vim"]
+	path = bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
+	branch = master

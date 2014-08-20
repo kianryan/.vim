@@ -149,6 +149,7 @@ hi Identifier cterm=none
 " Commented numbers at the end are *old* 256 color values
 "highlight PreProc       guifg=#EDF8F9
 call s:hifg("Comment"        ,"#9933CC","DarkMagenta",34) " 92
+highlight Comment ctermfg=164
 " 26 instead?
 call s:hifg("Constant"       ,"#339999","DarkCyan",21) " 30
 call s:hifg("rubyNumber"     ,"#CCFF33","Yellow",60) " 190
@@ -183,3 +184,6 @@ highlight GitGutterAdd ctermfg=82
 highlight GitGutterChange ctermfg=220
 highlight GitGutterDelete ctermfg=9
 highlight GitGutterChangeDelete ctermfg=44
+
+"Spelling
+highlight SpellBad     guifg=NONE guibg=NONE ctermfg=Red ctermbg=none cterm=underline
