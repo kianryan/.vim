@@ -29,6 +29,7 @@ Plugin 'majutsushi/tagbar.git'
 Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'bling/vim-airline.git'
 Plugin 'airblade/vim-gitgutter.git'
+Plugin 'Shougo/denite.nvim'
 
 " Editing 
 Plugin 'tpope/vim-surround.git'
@@ -232,3 +233,8 @@ function! QuickfixFilenames()
   endfor
   return join(values(buffer_numbers))
 endfunction
+
+" Denit.vim config
+call denite#custom#var('file_rec', 'command',
+	\ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
+nnoremap <silent> <C-p> :Denite file_rec<CR>
